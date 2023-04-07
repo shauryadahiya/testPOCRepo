@@ -1,0 +1,19 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "name": "msg",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "newworkload",
+      "connection": "cloudsecauto_STORAGE"
+    },
+    {
+      "name": "out",
+      "direction": "out",
+      "type": "queue",
+      "queueName": "returnqueueworkload",
+      "connection": "cloudsecauto_STORAGE"
+    }
+  ]
+}
